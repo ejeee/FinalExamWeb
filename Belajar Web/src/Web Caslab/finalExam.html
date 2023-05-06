@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Final Exam</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <!-- BUTTON -->
+    <div class="button">
+      <span class="fas fa-bars"></span>
+    </div>
+    <!-- BUTTON SELESAI -->
+
+    <div class="container">
+      <!-- SIDE BAR -->
+      <div class="sidebar">
+        <ul class="ul-sidebar">
+          <li class="li-sidebar">
+            <a class="a-sidebar">
+              <img src="1681355020966.png" class="img-sidebar" />
+            </a>
+          </li>
+          <li class="li-sidebar">
+            <a href="#" class="a-sidebar">Pemrograman Dasar</a>
+          </li>
+          <li class="li-sidebar">
+            <a href="#" class="a-sidebar">Pemrograman Lanjut</a>
+          </li>
+          <li class="li-sidebar">
+            <a href="#" class="a-sidebar">Pemrograman OOP</a>
+          </li>
+          <li class="li-sidebar">
+            <a href="#" class="a-sidebar">Struktur Data</a>
+          </li>
+        </ul>
+      </div>
+      <!-- SIDE BAR SELESAI -->
+
+      <!-- NAV BAR -->
+      <div class="navbar">
+        <ul class="ul-navbar">
+          <li class="li-navbar">
+            <a href="#" class="a-navbar">HOME</a>
+          </li>
+          <li class="li-navbar">
+            <a href="#" class="a-navbar">ABOUT US</a>
+          </li>
+          <li class="li-navbar">
+            <a href="#" class="a-navbar"
+              >OTHER SYSTEMS
+              <span class="fas fa-caret-down"></span>
+            </a>
+            <ul class="ul-OtherSystem">
+              <li class="li-OtherSystem">
+                <a href="#" class="a-OtherSystem">SIMPONIA</a>
+              </li>
+              <li class="li-OtherSystem">
+                <a href="#" class="a-OtherSystem">SEVENMAN</a>
+              </li>
+              <li class="li-OtherSystem">
+                <a href="#" class="a-OtherSystem">SIRENTA</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- NAV BAR SELESAI -->
+
+      <!-- CONTENT -->
+      <div>
+        <ul>
+          <li></li>
+        </ul>
+      </div>
+      <!-- CONTENT SELESAI -->
+
+    </div>
+    <script>
+      $(".button").click(function () {
+        $(this).toggleClass("click");
+        $(".sidebar").toggleClass("show");
+      });
+
+      $(".a-navbar").click(function () {
+        $(".ul-OtherSystem").toggleClass("show");
+        $(".ul-OtherSystem").toggleClass("rotate");
+      });
+    </script>
+  </body>
+</html>

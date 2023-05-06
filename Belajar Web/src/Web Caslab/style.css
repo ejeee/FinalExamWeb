@@ -1,0 +1,147 @@
+*,
+html{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color:#CAE9FF;
+}
+
+.button{
+    position: absolute;
+    top: 15px;
+    left: 45px;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: left 0.4s ease;
+}
+
+.button.click{
+    left: 300px;
+}
+
+.button.click span:before{
+    content: '\f00d';
+}
+
+.button span{
+    color:black;
+    font-size: 25px;
+    line-height: 45px;
+}
+
+.sidebar{
+    position: fixed;
+    width: 282px;
+    height: 100%;
+    left: -300px;
+    background-color: #023B70;
+    transition: left 0.4s ease;
+}
+
+.sidebar.show{
+    left: 0px;
+}
+
+.ul-sidebar{
+    position: static;
+    background-color: #023B70;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+
+.li-sidebar{
+    line-height: 60px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.a-sidebar{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding-left: 40px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+}
+
+.a-sidebar:hover{
+    background-color: #0E5699;
+}
+
+.img-sidebar{
+    position: center;
+    width: 80%;
+    height: 80%;
+}
+
+.navbar{
+    width: 100%;
+    height: 10vh;
+}
+
+.ul-navbar{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.li-navbar{
+    list-style-type: none;
+    padding: 20px;
+    margin: 5px;
+    color: white;
+    font-size: 30px;
+}
+
+.a-navbar{
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding-top: 15px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+}
+
+.ul-OtherSystem{
+    position: static;
+    display: none;
+}
+
+.ul-OtherSystem.show{
+    display: block;
+}
+
+.li-OtherSystem{
+    line-height: 42px;
+    border-bottom: none;
+}
+
+.a-OtherSystem{
+    font-size: 12px;
+    color: black;
+    padding-left: 80px;
+}
+
+.a-OtherSystem span{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+}
+
+.a-OtherSystem:hover span{
+    transform: translateY(-50%) rotate(-180deg);
+}
